@@ -10762,6 +10762,9 @@ body > .section {
   overflow: visible;
   border-radius: 4px;
 }
+.card:hover {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.1);
+}
 .card + .card,
 .card + .column-right-shadow {
   margin-top: 1.5rem;
@@ -11353,16 +11356,16 @@ figure.highlight .section {
   align-items: flex-start;
 }
 .widget .menu-list .tag {
-  background: $light-grey;
-  color: $white-invert;
+  background: light-grey;
+  color: white-invert;
 }
 .widget .tags .tag:first-child {
   background: #3273dc;
   color: #fff;
 }
 .widget .tags .tag:last-child {
-  background: $light-grey;
-  color: $white-invert;
+  background: light-grey;
+  color: white-invert;
 }
 .level.is-multiline {
   flex-wrap: wrap;
