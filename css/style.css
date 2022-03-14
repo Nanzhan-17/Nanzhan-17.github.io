@@ -1518,6 +1518,9 @@ a.has-text-grey-lightest:focus {
   max-width: 100%;
   position: relative;
 }
+.card:hover {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.1);
+}
 .card-header {
   background-color: transparent;
   align-items: stretch;
