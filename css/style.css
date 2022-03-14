@@ -11353,16 +11353,16 @@ figure.highlight .section {
   align-items: flex-start;
 }
 .widget .menu-list .tag {
-  background: $light-grey;
-  color: $white-invert;
+  background: light-grey;
+  color: white-invert;
 }
 .widget .tags .tag:first-child {
   background: #3273dc;
   color: #fff;
 }
 .widget .tags .tag:last-child {
-  background: $light-grey;
-  color: $white-invert;
+  background: light-grey;
+  color: white-invert;
 }
 .level.is-multiline {
   flex-wrap: wrap;
