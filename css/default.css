@@ -2121,7 +2121,7 @@ a.list-item {
   padding: 20px;
 }
 .navbar {
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.8);
   min-height: 3.25rem;
   position: relative;
   z-index: 30;
@@ -2983,7 +2983,7 @@ a.navbar-item.is-active,
     display: none;
   }
   .navbar-menu {
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.8);
     box-shadow: 0 8px 16px rgba(10,10,10,0.1);
     padding: 0.5rem 0;
   }
@@ -10244,7 +10244,7 @@ fieldset[disabled] .select select:hover {
   }
 }
 .footer {
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.8);
   padding: 3rem 1.5rem 6rem;
 }
 html {
@@ -10821,6 +10821,12 @@ article.article .article-meta {
 article.article .content {
   word-wrap: break-word;
   font-size: 1.1rem;
+}
+article.article .content a img {
+  margin: auto;
+  display: block;
+  width: 75%;
+  height: 75%;
 }
 article.article .content h1 {
   font-size: 1.75em;
