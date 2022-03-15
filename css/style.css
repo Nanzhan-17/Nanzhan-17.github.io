@@ -10258,6 +10258,9 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  background: #f7f7f7 url("/img/background-hd.png");
+  background-repeat: repeat-y;
+  background-attachment: scroll;
 }
 body > .section {
   flex-grow: 1;
@@ -10761,6 +10764,10 @@ body > .section {
 .card {
   overflow: visible;
   border-radius: 4px;
+  background-color: rgba(247,247,247,0.85);
+}
+.card:hover {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.1);
 }
 .card + .card,
 .card + .column-right-shadow {
@@ -11340,6 +11347,9 @@ figure.highlight .section {
 .widget .menu-list li ul {
   margin-right: 0;
 }
+.widget .menu-list a {
+  transition: background-color 0.3s ease-in-out;
+}
 .widget .menu-list .level {
   margin-bottom: 0;
 }
@@ -11353,16 +11363,16 @@ figure.highlight .section {
   align-items: flex-start;
 }
 .widget .menu-list .tag {
-  background: light-grey;
-  color: white-invert;
+  background: $light-grey;
+  color: $white-invert;
 }
 .widget .tags .tag:first-child {
   background: #3273dc;
   color: #fff;
 }
 .widget .tags .tag:last-child {
-  background: light-grey;
-  color: white-invert;
+  background: $light-grey;
+  color: $white-invert;
 }
 .level.is-multiline {
   flex-wrap: wrap;
@@ -11394,6 +11404,10 @@ figure.highlight .section {
     bottom: 0;
     z-index: 99;
     background: rgba(0,0,0,0.7);
+  }
+  #toc {
+    max-height: calc(100vh - 22px);
+    overflow-y: scroll;
   }
   .widget.card#toc.is-active,
   #toc-mask.is-active {
@@ -11661,13 +11675,4 @@ figure.highlight .section {
   .section {
     padding: 1.5rem 1rem;
   }
-}
-/* 黏性目录 */
-.is-1-column-toc,
-.is-2-column-toc,
-.is-3-column-toc {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  z-index: 1;
 }

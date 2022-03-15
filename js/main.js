@@ -116,6 +116,7 @@
 
     const $toc = $('#toc');
     if ($toc.length > 0) {
+        
         const $mask = $('<div>');
         $mask.attr('id', 'toc-mask');
 
